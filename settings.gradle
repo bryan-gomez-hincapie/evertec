@@ -1,0 +1,2 @@
+rootProject.name='evertec'
+include ':app'

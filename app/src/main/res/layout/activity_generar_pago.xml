@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".generarPagoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/tarjeta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Numero de tarjeta"
+                android:inputType="numberDecimal"
+                android:textAlignment="center" />
+
+            <LinearLayout
+                android:id="@+id/infoTarget"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <EditText
+                    android:id="@+id/etMonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Month"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/etYearT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Year"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/etCodT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="cvv"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <EditText
+                android:id="@+id/vpago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Valor a pagar"
+                android:inputType="numberDecimal"
+                android:textAlignment="center" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <Spinner
+                android:id="@+id/spinnerCurrency"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <Button
+                android:id="@+id/bt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Procesar" />
+
+            <Space
+                android:id="@+id/s1"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvInfoCredits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/credits"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:visibility="gone" />
+
+            <Space
+                android:id="@+id/s2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvcalcular"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:textAlignment="center"
+                android:visibility="gone" />
+
+            <Space
+                android:id="@+id/s3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btCalcularInteres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Calcular"
+                android:visibility="gone" />
+
+            <Space
+                android:id="@+id/s4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvOTP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingrese el OTP que se te ha provisto"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/etOTP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="OTP"
+                android:inputType="numberDecimal"
+                android:visibility="gone" />
+
+            <Space
+                android:id="@+id/s5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/llOTP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/bGOtp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/GOtp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/bVOtp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/VOtp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvPagador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Informacion del pagador"
+                android:textColor="#000000"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/etNamePagador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nombre Pagador"
+                android:inputType="textPersonName"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/etEmailPagador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Email Pagador"
+                android:inputType="textPersonName"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvComprador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Informacion del comprador"
+                android:textColor="#000000"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/etNameComprador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nombre Comprador"
+                android:inputType="textPersonName"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/etEmailComprador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Email Comprador"
+                android:inputType="textPersonName"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btProcessPago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Pago"
+                android:visibility="gone" />
+
+            <Space
+                android:id="@+id/s6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

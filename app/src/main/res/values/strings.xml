@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">evertec</string>
+    //Login
+    <string name="login">Ingresar</string>
+    //Menu principal
+    <string name="pago">Generar pago</string>
+    <string name="historial">Historial de pagos</string>
+    //PAGO
+    <string name="Procesar">Procesar Información</string>
+    <string name="Pago">Generar Pago</string>
+    <string name="Calcular">Calcular Interes</string>
+    <string name="GOtp">Generar OTP</string>
+    <string name="VOtp">Validar OTP</string>
+    <string name="popBt">Terminar</string>
+    //HISTORIAL
+    <string name="hBusqueda">Buscar</string>
+    <string name="hModificar">Modificar estado</string>
+    <string name="hSalir">Salir</string>
+
+</resources>
