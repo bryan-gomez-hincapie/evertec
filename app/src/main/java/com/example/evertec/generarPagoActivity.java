@@ -873,7 +873,7 @@ public class generarPagoActivity extends AppCompatActivity {
 
         //Variables que se mostraran de la transacción
         uno = date;
-        dos = "USD $" + original.toString();
+        dos = "USD $" + pago;
         tres = "USD $" + interest.toString();
         cuatro = "USD $" + total.toString();
         cinco = "USD $" + installment.toString();
